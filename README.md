@@ -4,8 +4,8 @@
 
 This repository contains analysis scripts for two related studies on diabetic retinopathy (DR):
 
-- **Study 1 (Journal of Translational Medicine, in submission):** Integrative single-cell and machine learning analysis identifies a ferroptosis-related three-gene diagnostic signature for diabetic retinopathy
-- **Study 2 (Phytomedicine, in preparation):** Therapeutic mechanism of *Tetrastigma hemsleyanum* in diabetic retinopathy: targeting HMOX1/CTSD-mediated ferroptosis in pathogenic macrophages
+- **Study 1 (in submission):** Integrative single-cell and machine learning analysis identifies a ferroptosis-related three-gene diagnostic signature for diabetic retinopathy
+- **Study 2 (in preparation):** Therapeutic mechanism of *Tetrastigma hemsleyanum* in diabetic retinopathy: targeting HMOX1/CTSD-mediated ferroptosis in pathogenic macrophages
 
 ## ScienceDB DOI
 
@@ -15,9 +15,6 @@ https://doi.org/10.57760/sciencedb.0134m
 ## Repository Contents
 
 - `01_scripts/`: R scripts used for all analyses
-  - `DR_single_cell_FULL_ANALYSIS.R`: Single-cell analysis pipeline
-  - `Key_Code_Backup.R`: Key code backup
-  - `analysis_01_ml.R`: Machine learning analysis
 - `05_session_info/`: R session information for reproducibility
 - `README.md`: This file
 
@@ -31,14 +28,14 @@ https://doi.org/10.57760/sciencedb.0134m
 
 ## Key Findings
 
-### Study 1 (JTM)
+### Study 1
 
 1. Identified 11 macrophage subpopulations in human PDR
 2. SPP1+/HMOX1+ macrophages exhibit ferroptosis activation (HMOX1, CTSD, FTH1)
 3. Three-gene diagnostic signature (FTH1, LDHA, CTSZ) with 10-fold CV AUC=0.800 (training), 0.889 (GSE60436 after Z-score), 0.705 (FTH1 alone in GSE160306)
 4. FTH1 correlates with monocyte/macrophage infiltration (r=0.316, P=0.015)
 
-### Study 2 (Phytomedicine)
+### Study 2
 
 1. CellChat analysis reveals SPP1_Mac communicates with pericytes (0.907), fibroblasts (0.819), and endothelial cells (0.658)
 2. Molecular docking shows active compounds of *Tetrastigma hemsleyanum* bind to HMOX1, CTSD, and SPP1
